@@ -22,10 +22,12 @@ body {
 }
 
 .main-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
     box-shadow: 10px 5px 50px hsl(221, 100%, 96%);
+    margin-bottom: 20px;
 }
 
 .left-side-container {
@@ -34,14 +36,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .left-side-title {
     color: hsl(241, 100%, 89%);
     font-weight: 700;
     font-size: 18px;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .score-circle {
@@ -54,11 +56,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px;
 }
 
 .main-score {
     color: hsl(0, 0%, 100%);
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
 }
 
@@ -72,4 +75,84 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 225px;
+    text-align: center;
+}
+
+.footer-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.right-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 20px;
+}
+
+.right-side-title {
+    color: hsl(224, 30%, 27%);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.reaction { background-color: hsla(0, 100%, 67%, 0.1); color: hsl(0, 100%, 67%); }
+.memory { background-color: hsl(39, 100%, 56%, 0.1);  color: hsl(39, 100%, 56%); }
+.verbal { background-color: hsl(166, 100%, 37%, 0.1);  color: hsl(166, 100%, 37%); }
+.visual { background-color: hsl(234, 85%, 45%, 0.1);  color: hsl(234, 85%, 45%); }
+
+
+.category-item-leading {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.category-item img {
+    margin-right: 10px;
+    scale: 0.8;
+}
+
+.category-item-score-container {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.category-main-score {
+    color: hsl(224, 30%, 27%);
+}
+
+.category-sub-score {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+.continue-btn {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
 }
