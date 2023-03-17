@@ -43,7 +43,6 @@ body {
     color: hsl(241, 100%, 89%);
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 20px;
 }
 
 .score-circle {
@@ -95,7 +94,7 @@ body {
 .right-side-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 30px 20px;
 }
 
@@ -103,7 +102,6 @@ body {
     color: hsl(224, 30%, 27%);
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .category-item {
